@@ -5,12 +5,16 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { MatButtonModule, MatFormFieldModule, MatInputModule, MatCardModule, MatDialogModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
+import {Routes, RouterModule} from "@angular/router";
+import {rutas} from "./app.routes"
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EjemploDialogo
+    EjemploDialogo,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
 		FormsModule,
     MatCardModule,
     HttpClientModule,
-    MatDialogModule
+    MatDialogModule,
+    RouterModule.forRoot(rutas)
   ],
   providers: [],
   entryComponents: [EjemploDialogo],
