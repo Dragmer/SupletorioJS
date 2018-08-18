@@ -3,7 +3,7 @@ import {RouterModule} from "@angular/router";
 import {LoginComponent} from "./login/login.component";
 
 const rutas : Routes = [
-  {path: "", redirectTo: "inicio", pathMatch:"full"},
+  {path: "", redirectTo: "login", pathMatch:"full"},
   {path: "login", component: LoginComponent},
 ]
 
